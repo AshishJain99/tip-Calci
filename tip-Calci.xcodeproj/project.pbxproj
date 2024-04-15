@@ -17,6 +17,10 @@
 		9E06C6692BC85DA60059D6BA /* BillInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06C6682BC85DA60059D6BA /* BillInputView.swift */; };
 		9E06C66B2BC85DC80059D6BA /* TipInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06C66A2BC85DC80059D6BA /* TipInputView.swift */; };
 		9E06C66D2BC85DF00059D6BA /* SplitInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06C66C2BC85DF00059D6BA /* SplitInputView.swift */; };
+		9E06C6702BC863920059D6BA /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06C66F2BC863920059D6BA /* ThemeColor.swift */; };
+		9E06C6732BC863CB0059D6BA /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06C6722BC863CB0059D6BA /* UIColor+Extensions.swift */; };
+		9E06C6752BC867600059D6BA /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06C6742BC867600059D6BA /* ThemeFont.swift */; };
+		9E06C6782BC86B6F0059D6BA /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06C6772BC86B6F0059D6BA /* LabelFactory.swift */; };
 		9EBA38AC2BBC6ED400D752EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBA38AB2BBC6ED400D752EC /* AppDelegate.swift */; };
 		9EBA38AE2BBC6ED400D752EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBA38AD2BBC6ED400D752EC /* SceneDelegate.swift */; };
 		9EBA38B02BBC6ED400D752EC /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBA38AF2BBC6ED400D752EC /* CalculatorVC.swift */; };
@@ -51,6 +55,10 @@
 		9E06C6682BC85DA60059D6BA /* BillInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInputView.swift; sourceTree = "<group>"; };
 		9E06C66A2BC85DC80059D6BA /* TipInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipInputView.swift; sourceTree = "<group>"; };
 		9E06C66C2BC85DF00059D6BA /* SplitInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitInputView.swift; sourceTree = "<group>"; };
+		9E06C66F2BC863920059D6BA /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
+		9E06C6722BC863CB0059D6BA /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		9E06C6742BC867600059D6BA /* ThemeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFont.swift; sourceTree = "<group>"; };
+		9E06C6772BC86B6F0059D6BA /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 		9EBA38A82BBC6ED400D752EC /* tip-Calci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tip-Calci.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBA38AB2BBC6ED400D752EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EBA38AD2BBC6ED400D752EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +123,31 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		9E06C66E2BC8637E0059D6BA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9E06C66F2BC863920059D6BA /* ThemeColor.swift */,
+				9E06C6742BC867600059D6BA /* ThemeFont.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		9E06C6712BC863B50059D6BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E06C6722BC863CB0059D6BA /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9E06C6762BC86B510059D6BA /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				9E06C6772BC86B6F0059D6BA /* LabelFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		9EBA389F2BBC6ED400D752EC = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +172,9 @@
 		9EBA38AA2BBC6ED400D752EC /* tip-Calci */ = {
 			isa = PBXGroup;
 			children = (
+				9E06C6762BC86B510059D6BA /* Factory */,
+				9E06C6712BC863B50059D6BA /* Extensions */,
+				9E06C66E2BC8637E0059D6BA /* Config */,
 				9E06C6632BC85C300059D6BA /* View */,
 				9EBA38AB2BBC6ED400D752EC /* AppDelegate.swift */,
 				9EBA38AD2BBC6ED400D752EC /* SceneDelegate.swift */,
@@ -315,12 +351,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E06C6752BC867600059D6BA /* ThemeFont.swift in Sources */,
 				9EBA38B02BBC6ED400D752EC /* CalculatorVC.swift in Sources */,
+				9E06C6732BC863CB0059D6BA /* UIColor+Extensions.swift in Sources */,
 				9E06C6652BC85C420059D6BA /* LogoView.swift in Sources */,
+				9E06C6702BC863920059D6BA /* ThemeColor.swift in Sources */,
 				9E06C6692BC85DA60059D6BA /* BillInputView.swift in Sources */,
 				9E06C6672BC85D860059D6BA /* ResultView.swift in Sources */,
 				9EBA38AC2BBC6ED400D752EC /* AppDelegate.swift in Sources */,
 				9EBA38AE2BBC6ED400D752EC /* SceneDelegate.swift in Sources */,
+				9E06C6782BC86B6F0059D6BA /* LabelFactory.swift in Sources */,
 				9E06C66D2BC85DF00059D6BA /* SplitInputView.swift in Sources */,
 				9E06C66B2BC85DC80059D6BA /* TipInputView.swift in Sources */,
 			);
